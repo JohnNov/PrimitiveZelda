@@ -101,33 +101,6 @@ void Map::print(){
 
 
 void Map::checkMovement(char input, Character &aCharacter){   //&aCharacter is a reference.  That is,
-//it is a direct link to the memory location that stores
-//that value.
-/*
-Remember: C++ is naturally a pass BY VALUE.
-Pass by value is when we pass copies of the value.
-*/
-
-/*
-This function only checks for walls at the moment.
-We need to provide a switch statement for battle
-with monsters at some point.
-*/
-
-/*
-We need a function that goes through the map and returns the player location.
-How do we do this for monsters?
-*/
-
-/*
-So we need a setter and getter for character location
-
-Remember: a reference parameter will CHANGE the passed value EVEN if there's no return.
-
-Consider GameChallenge 3 at 36:30 for full explanation.
-Also this:
-https://www.youtube.com/watch?v=X9-a-MiMwEI
-*/
 
 
 int x;
