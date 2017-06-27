@@ -20,7 +20,6 @@ GameSystem::GameSystem(string mapName){
 }
 
 /*
-We have to make sure that the player can move around.  Use getch.
 The map will accept user input and move the players token based on switch statements
 */
 

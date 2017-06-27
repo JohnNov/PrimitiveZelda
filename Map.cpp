@@ -41,18 +41,14 @@ for(int i = 0; i < 5; i++){
     _spawnValue = rand() % 2;   //We generate either 1 or 2
 
     if(_spawnValue==1){
-        _monsterPointers[i] = new Werewolf();
+        _monsterPointers[i] = new Werewolf();   ///When end game is implemented we need to delete these
     }
     else{
         _monsterPointers[i] = new Vampire();
     }
         obtainSpawningLocations(_monsterPointers[i]->getToken(),*_monsterPointers[i]);
-    //WE NEED TO DELETE THESE POINTERS EVENTUALLY!!!
-
 }
-
         obtainSpawningLocations(_player.getToken(),_player);
-
 }
 
 
@@ -62,7 +58,7 @@ Below code provides all the possible spawning locations for the player
 and stores them in an array of tuples.
 */
 
-tuple<int,int> myTuple[600];    //Hard coded 600 value is messy.  Change later
+tuple<int,int> myTuple[600];    //Hard coded 600 value should be dynamic. 600 is a magic number that was arbitrarily chosen because it's a high value
 
 int numberOfSpawnPoints = 0;
 int upperLimitForNumberGenerator = 0;
@@ -300,7 +296,7 @@ int possibleY;
     for(int i = 0; i < 5; i++){
         _monsterPointers[i]->getLocation(possibleX,possibleY);     //The getLocation will be any given characters coordinates
             if((possibleX ==x)&&(possibleY==y)){
-                cout<<"The monster in question is: "<<_monsterPointers[i]->getToken()<<endl;
+                //cout<<"The monster in question is: "<<_monsterPointers[i]->getToken()<<endl;
                 return i;
                 break;
                     }
@@ -335,19 +331,19 @@ char Map::randomChar(){
     int randomNumber = rand() % 4;     //4 possible outcomes: 0,1,2,3
 
     switch(randomNumber){
-    case 0:     //do stuff
+    case 0:
             achar = 'w';
     break;
 
-    case 1:     //do stuff
+    case 1:
             achar = 's';
     break;
 
-    case 2:     //do stuff
+    case 2:
             achar = 'a';
     break;
 
-    case 3:     //do stuff
+    case 3:
             achar = 'd';
     break;
 }

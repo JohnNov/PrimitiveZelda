@@ -1,0 +1,61 @@
+# depslib dependency file v1.0
+1460938338 source:/home/john/Documents/ProgrammingProjects/PrimitiveZelda/main.cpp
+	<iostream>
+	"GameSystem.h"
+
+1460945312 /home/john/Documents/ProgrammingProjects/PrimitiveZelda/GameSystem.h
+	"Map.h"
+	<string>
+	<list>
+
+1460941490 /home/john/Documents/ProgrammingProjects/PrimitiveZelda/Map.h
+	<vector>
+	<fstream>
+	<string>
+	<tuple>
+	<ctime>
+	<random>
+	"Player.h"
+	"Monster.h"
+
+1460938338 /home/john/Documents/ProgrammingProjects/PrimitiveZelda/Player.h
+	<string>
+	"Character.h"
+
+1460938338 /home/john/Documents/ProgrammingProjects/PrimitiveZelda/Character.h
+	<string>
+
+1460938338 /home/john/Documents/ProgrammingProjects/PrimitiveZelda/Monster.h
+	<string>
+	"Character.h"
+
+1460938338 source:/home/john/Documents/ProgrammingProjects/PrimitiveZelda/Monster.cpp
+	<iostream>
+	<string>
+	"Monster.h"
+
+1460938338 source:/home/john/Documents/ProgrammingProjects/PrimitiveZelda/Player.cpp
+	<iostream>
+	<string>
+	"Player.h"
+
+1460938338 source:/home/john/Documents/ProgrammingProjects/PrimitiveZelda/Vampire.cpp
+	<iostream>
+	<string>
+	"Vampire.h"
+
+1460938338 /home/john/Documents/ProgrammingProjects/PrimitiveZelda/Vampire.h
+	<string>
+	"Character.h"
+	"Monster.h"
+
+1460938338 source:/home/john/Documents/ProgrammingProjects/PrimitiveZelda/Werewolf.cpp
+	<iostream>
+	<string>
+	"Werewolf.h"
+
+1460938338 /home/john/Documents/ProgrammingProjects/PrimitiveZelda/Werewolf.h
+	<string>
+	"Character.h"
+	"Monster.h"
+
