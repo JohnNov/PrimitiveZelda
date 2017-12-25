@@ -4,6 +4,8 @@
 
 using namespace std;
 
+//Updated Vampire in master branch!  This should show up in a fetch.
+
 Vampire::Vampire(){
     setToken(_liveToken);
 }
