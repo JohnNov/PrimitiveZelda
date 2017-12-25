@@ -3,4 +3,7 @@
 
 //Another change.  After we push this should show up in "snakeNewFunc_TrackingSnakeBranch"
 
+void Snake::slither(){
+    cout<<"Slithering around!"<<endl;
+}
 
