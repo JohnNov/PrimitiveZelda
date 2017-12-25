@@ -7,3 +7,9 @@ void Snake::slither(){
     cout<<"Slithering around!"<<endl;
 }
 
+
+
+void Snake::eat(){
+    cout<<"Eating!!"<<endl;
+}
+
